@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pioneer-Bank</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" class="css" />
+  </head>
+  <body>
+    <div id="login-area">
+      <h1 class="text-center">Welcome to Pioneer-Bank</h1>
+      <div class="submit-area">
+        <h1>
+          Login
+        </h1>
+        <br />
+        <input
+          type="text"
+          name=""
+          placeholder="Enter your email"
+          class="form-control"
+        /><br />
+        <input
+          type="password"
+          name=""
+          placeholder="Password"
+          class="form-control"
+        /><br />
+        <button class="btn btn-success" id="login">Enter</button>
+      </div>
+    </div>
+    <div id="transaction-area">
+      <h1>Transaction Area</h1>
+    </div>
+    <script>
+      const loginBtn = document.getElementById("login");
+      loginBtn.addEventListener("click", function() {
+        const loginArea = document.getElementById("login-area");
+        loginArea.style.display = "none";
+        const Transaction = document.getElementById("transaction-area");
+        Transaction.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
