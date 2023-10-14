@@ -2,58 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <div class="bank-header">
-    <h1 class="text-center text-5xl mt-10"> Functional <span class="text-cyan-600">Pioneer Bank</span> </h1>
-  </div>
+    <div class="w-3/4 mx-auto bg-rose-600 p-5 rounded-lg">
+        <form action="">
+            <input class="block my-2 rounded px-1 w-3/4 mx-auto" type="text" placeholder="Enter your email address">
+            <input class="block my-2 rounded px-1 w-3/4 mx-auto" type="password" name="" id=""
+                placeholder="Enter your password">
 
-  <!-- transaction unit -->
-
-  <div class="w-9/12 mx-auto grid grid grid-cols-3 gap-x-2 mt-10">
-
-    <div class="bg-emerald-600 text-white p-4 rounded-lg">
-      <h4 class="text-2xl text-center font-medium">Deposit Balance</h4>
-      <h2 class="text-4xl text-center font-semibold">$ <span id="previous-deposit">00</span></h2>
-    </div>
-    <div class="bg-lime-600 text-white p-4 rounded-lg">
-      <h4 class="text-2xl text-center font-medium">Withdraw Balance</h4>
-      <h2 class="text-4xl text-center font-semibold">$ <span id="previous-withdraw">00</span></h2>
-    </div>
-    <div class="bg-red-800 text-white p-4 rounded-lg">
-      <h4 class="text-2xl text-center font-medium">Total Balance</h4>
-      <h2 class="text-4xl text-center font-semibold">$ <span id="total-balance">500</span></h2>
-    </div>
-  </div>
-
-  <!-- deposit and Withdraw unit  -->
-  <div class="w-9/12 mx-auto grid grid-cols-2 gap-x-4">
-    <div class="bg-rose-800 mt-2 p-3 rounded-lg text-white">
-      <h2 class="text-2xl">Your Deposits</h2>
-      <input class=" text-black p-1 rounded w-3/4 my-1" type="text" name="" id="current-deposit"
-        placeholder="$ Amount you want to deposit">
-      <button class="text-white hover:bg-sky-500 p-1 rounded block bg-indigo-800" id="deposit-button">Deposit</button>
-    </div>
-    <div class="bg-rose-800 mt-2 p-3 rounded-lg text-white">
-      <h2 class="text-2xl ">Your Withdraw</h2>
-      <input class="text-black p-1 rounded block w-3/4 my-1" type="text" name="" id="current-withdraw"
-        placeholder="$ Amount you want to deposit">
-      <button class="text-white hover:bg-sky-500 p-1 rounded block bg-indigo-800" id="withdraw-button">Withdraw</button>
+            <input class="block bg-lime-600 px-2 text-white w-3/4 mx-auto rounded hover:bg-sky-500 cursor-pointer"
+                type="submit" value="Log In">
+        </form>
     </div>
 
+<script src="login.js"></script>
 
-  </div>
-
-
-  <script src="utilites.js"></script>
-  <script src="deposit.js"></script>
-  <script src="withdraw.js"></script>
 </body>
 
 </html>
-
