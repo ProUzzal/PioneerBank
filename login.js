@@ -9,7 +9,7 @@ document.querySelector("input[type='submit']").addEventListener('click', functio
     const password = document.querySelector("input[type='password']").value;
     if (userEmail === 'uzzal@gmail.com' && password === '1234') {
 
-        window.location = 'index.html';
+        window.location = 'transaction.html';
     }
     else {
         alert('Try correct email and password')
