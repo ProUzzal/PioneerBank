@@ -1,10 +1,13 @@
 document.querySelector('#withdraw-button').addEventListener('click', function () {
     const currentInputAmount = parseInt(document.querySelector('#current-withdraw').value);
-    console.log(currentInputAmount);
+
     const totalBalance = parseInt(document.querySelector('#total-balance').innerText);
     console.log(totalBalance);
-
-    if (currentInputAmount <= totalBalance) {
+    if (isNaN(currentInputAmount)) {
+        alert('Invalid input');
+        document.querySelector('#current-withdraw').value = '';
+    }
+    else if (currentInputAmount <= totalBalance) {
         const currentInput = currentBalanceUpdate('#previous-withdraw', '#current-withdraw');
         if (currentInput != undefined) {
             totalBalanceUpdate((-currentInput));
